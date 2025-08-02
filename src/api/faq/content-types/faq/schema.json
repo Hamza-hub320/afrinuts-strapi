@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "faqs",
+  "info": {
+    "singularName": "faq",
+    "pluralName": "faqs",
+    "displayName": "FAQ"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "question": {
+      "type": "string",
+      "required": true
+    },
+    "answer": {
+      "type": "blocks",
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        " General",
+        "Cashew Farming",
+        "Sustainability",
+        "Islamic Investment",
+        "Processing Center"
+      ]
+    },
+    "order": {
+      "type": "integer"
+    },
+    "isFeatured": {
+      "type": "boolean"
+    }
+  }
+}
